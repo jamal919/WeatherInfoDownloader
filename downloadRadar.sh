@@ -15,6 +15,8 @@ while true; do
 	wget -c http://bmd.gov.bd/file/img/nwp/radar_khepupara.gif
 	wget -c http://bmd.gov.bd/file/img/nwp/radar_molvibazar.gif
 
+	# Creating Directory
+	mkdir `date +"%Y%m%d%H%M%S"`
 	# Renaming with datetime
 	mv ppi_agt.gif ./`date +"%Y%m%d%H%M%S"`/ppi_agt.gif
 	mv ppz_agt.gif ./`date +"%Y%m%d%H%M%S"`/ppz_agt.gif
